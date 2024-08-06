@@ -6,11 +6,11 @@
 
 
 
-header {
+.header {
     display: grid;
-    grid-template-columns: 1fr 148px 1fr;
+    grid-template-columns: 1fr 138px 1fr;
     align-items: center;
-    padding: 87px 50px 88px 50px;
+    padding: 91px 53px 92px 50px;
     font-size: 18px;
     text-underline-position: under;
 }
@@ -22,9 +22,10 @@ header {
 }
 .header__menu > ul {
     display: flex;
+    list-style: circle;
 }
 .header__menu > ul > li:not(:first-child) {
-    margin-left: 33px;
+    margin-left: 32px;
 }
 .li_without-marker {
     list-style: none;
@@ -33,7 +34,7 @@ header {
     text-decoration: none;
 }
 
-.header__adress {
+.block_adress {
     display: flex;
     flex-direction: column;
     justify-self: right;
@@ -44,14 +45,13 @@ header {
 
 
 .section_cover {
-    height: 757px;
-    padding: 165px 50px 50px 50px;
+    padding: 165px 20px 50px 20px;
     position: relative;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     color: #fff;
 }
-.section_cover__overlay {
+.section__overlay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -72,6 +72,7 @@ header {
     width: 100%;
 }
 .section_cover__title__line_left {
+    padding-left: 32px;
     text-align: left;
 }
 .section_cover__title__line_center {
@@ -83,10 +84,7 @@ header {
     margin-top: 5px;
 }
 .section_cover__title__line_right > .section_cover__title__line__text_uncompressed {
-    margin-right: -23px;
-}
-.section_cover__title__line_right > .section_cover__title__line__text_compressed {
-    margin-right: -30px;
+    letter-spacing: 37px;
 }
 .section_cover__title__line__text_compressed {
     letter-spacing: 30px;
@@ -102,7 +100,7 @@ header {
     position: relative;
     z-index: 1;
     margin-top: 129px;
-    padding-left: 32px;
+    padding: 0 30px 0 63px;
     font-size: 22px;
     text-transform: uppercase;
 
@@ -156,14 +154,16 @@ header {
     background-size: cover;
     background-position: center center;
 }
-.section_lots__cards__item__overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+.section_lots__cards__item__background_1 {
+    background-image: url(../images/card-lot-01.jpg);
 }
+.section_lots__cards__item__background_2 {
+    background-image: url(../images/card-lot-02.jpg);
+}
+.section_lots__cards__item__background_3 {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
 .section_lots__cards__item__title {
     position: relative;
     z-index: 1;
